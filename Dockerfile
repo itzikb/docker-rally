@@ -7,9 +7,10 @@ RUN yum -y update
 RUN echo "centos ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 ADD scripts /home/centos/scripts
 RUN chmod 755 -R /home/centos/scripts \
-    && chown centos:centos /home/centos/scripts
+    && chown centos:centos /home/centos/scripts \
+    && cd /home/centos
 
 USER centos
-WORKDIR /home/centos/rally
 RUN wget -q -O- https://raw.githubusercontent.com/openstack/rally/master/install_rally.sh | bash
+WORKDIR /home/centos/rally
 CMD ['/bin/bash']

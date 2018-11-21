@@ -1,7 +1,7 @@
 FROM centos:7
 RUN useradd -ms /bin/bash -u 5005 centos
 RUN yum -y install epel-release
-RUN yum -y install wget python-pip which gcc redhat-rpm-config python-devel python-pip iputils git 
+RUN yum -y install wget python-pip which gcc redhat-rpm-config python-devel python-pip iputils git vim git
 RUN yum -y update
 
 RUN echo "centos ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers

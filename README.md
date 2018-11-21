@@ -26,7 +26,7 @@ $ sudo chcon -Rt svirt_sandbox_file_t /home/stack/authdir
 $ setfacl -m u:5006:r /home/stack/authdir/overcloudrc
 ```
 
-by default to run the Rally scenarios you need to have:
+By default to run the Rally scenarios you need to have:
 1. An external network called public
 2. A flavor called m1.tiny
 3. A cirros image with a name that machres the regex cirros.*-disk

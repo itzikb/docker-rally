@@ -1,4 +1,5 @@
 # docker-rally
+[![Build Status](https://travis-ci.org/itzikb/docker-rally.svg?branch=master)](https://travis-ci.org/itzikb/docker-rally) 
 It meant to make it easy to configure and run Rally against an existing cloud.
 
 **Note:** If you already have the image use the following to get the latest build

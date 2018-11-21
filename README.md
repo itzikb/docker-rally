@@ -40,7 +40,7 @@ $ openstack flavor create --ram 128 --vcpus 1 --public m1.tiny
 
 To use it run the following (Here overcloudrc file is under /home/stack/authdir):
 ```
-$ sudo docker run -it --name myrally -v /home/stack/authdir:/env itzikb/docker-rally  /bin/bash
+$ sudo docker run -it --name myrally --network host -v /home/stack/authdir:/env itzikb/docker-rally  /bin/bash
 ```
 **Note: Don't use the /home/stack directory as it may result in an unexpected behavior**
 
